@@ -357,10 +357,10 @@
     </div>
 
    
-    <form action="https://api.web3forms.com/submit" class="contact_form" method="POST">
+    <form class="contact_form" method="POST">
 
     
-    <input type="hidden" name="access_key" value="83fbc96f-452b-4186-9249-c193939689db">
+    <input type="hidden" name="access_key" value="fcYU52hpxhMwRwYtp">
     <input type="text" name="name"  placeholder="your name"  required>
     <input type="email" name="email" placeholder="email" required>
      <input type="text" name="mobile" placeholder="Phone no." required>
@@ -412,7 +412,7 @@
     emailjs.init("fcYU52hpxhMwRwYtp"); 
   })();
 
-  document.querySelector('.contact-right form').addEventListener('submit', function(e) {
+  document.querySelector('.contact_form').addEventListener('submit', function(e) {
     e.preventDefault();
     // Replace 'template_xxxxxxx' with your actual EmailJS template ID
     emailjs.sendForm("service_59r0cpf", "template_4o7uqoj", this)
